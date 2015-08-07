@@ -1,6 +1,6 @@
 #!/bin/sh
 
-CACHE=/home/grochmal/documents/capybara/hath/cache
+CACHE=/home/me/documents/capybara/hath/cache
 
 echo "find $CACHE -type f -name '*-jpg' > all-jpg.dat"
 find $CACHE -type f -name '*-jpg' > all-jpg.dat

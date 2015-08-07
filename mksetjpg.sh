@@ -2,7 +2,7 @@
 
 # Converts all files to the desired size (that the smallest side be 1280 pixels
 # or less) and strip all EXIF information.  The conversion is directed by the
-# filename data in the `fnames` directory, this allows the script to run on
+# filename data in the `data` directory, this allows the script to run on
 # specific subsets of the files.
 
 # enforce directory structure
@@ -12,7 +12,7 @@ cd "$DIR"
 # jpg aa-co | png aa-aj
 SUFFIX=aa
 PREFIX=jpg
-DATA=fnames/$PREFIX-$SUFFIX
+DATA=data/$PREFIX-$SUFFIX
 USAGE="Usage: mksetjpg.sh <quality> [split]"
 
 convert_imgs () {
@@ -37,7 +37,7 @@ convert_imgs () {
 if test "$2x" != "x"
 then
     SUFFIX=$2
-    DATA=fnames/$PREFIX-$SUFFIX
+    DATA=data/$PREFIX-$SUFFIX
 fi
 
 if test "$1x" = "x"
