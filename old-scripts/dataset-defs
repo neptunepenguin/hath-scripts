@@ -1,0 +1,27 @@
+VAM
+===
+
+size to 768px on bigger edge
+jpeg quality 90
+colorspace RGB
+
+NIRP
+====
+
+size to 600px on bigger edge
+jpeg quality 90
+colorspace RGB
+
+script
+======
+
+for image in *.jpg; do
+  size=$(identify $image | cut -d ' ' -f 3)
+  if [[ ${size#*x} > ${size%x*} ]]; then
+    param=600
+  else
+    param=x600
+  fi
+  convert $i -colorspace RGB -quality 90 -resize $param new_$i
+done
+

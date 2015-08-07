@@ -1,0 +1,35 @@
+total of images
+---------------
+
+total : 49561 (17238 MiB)
+gif   :   393 (0.79%)     # gif are too quirky and unimportant, ignored
+jpeg  : 43242 (87.25%)
+png   :  5926 (11.96%)
+
+width x height
+--------------
+
+w.max()
+3508
+
+w.min()
+30
+
+h.max()
+3998
+
+h.min()
+3
+
+w.mean()
+925.97449634466204
+
+w.std()
+273.54040325926621
+
+h.mean()
+1086.4887580897121
+
+h.std()
+477.44664118204628
+
